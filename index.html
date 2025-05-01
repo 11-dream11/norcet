@@ -64,43 +64,34 @@
         </div>
 
         <!-- Registration Modal -->
-        <div class="modal fade" id="registerModal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Create New Account</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">NORCET Course Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="loginEmail" required 
+                               placeholder="Enter user1234">
                     </div>
-                    <div class="modal-body">
-                        <form id="registerForm">
-                            <div class="mb-3">
-                                <label for="regName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="regName" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="regEmail" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="regEmail" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="regPassword" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="regPassword" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="regConfirmPassword" class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" id="regConfirmPassword" required>
-                            </div>
-                            <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" id="agreeTerms" required>
-                                <label class="form-check-label" for="agreeTerms">
-                                    I agree to the <a href="#">Terms of Service</a> and understand my access will expire 1 year after first login.
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Register</button>
-                        </form>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" required 
+                               placeholder="Enter 789456123">
                     </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <div class="mt-3 text-center">
+                    <p class="small text-muted">Use username: user1234 and password: 789456123</p>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
         <!-- Main Content (shown when logged in) -->
         <div id="mainContent" class="d-none">
